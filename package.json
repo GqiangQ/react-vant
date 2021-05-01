@@ -1,10 +1,11 @@
 {
   "name": "react-vant",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:GqiangQ/react-vant.git",
   "author": "QuinnGeter <qqiangg.cn@gmail.com>",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index",
   "scripts": { 
     "build": "webpack --config ./build/webpack.build.config.js",
     "dev": "webpack serve --config ./build/webpack.config.js"
@@ -29,5 +30,14 @@
   "exclude": [
       "node_modules",
       "**/*.spec.ts"
+  ],
+  "keywords": [
+    "ui",
+    "react",
+    "vant",
+    "mobile",
+    "frontend",
+    "component",
+    "components"
   ]
 }
