@@ -1,5 +1,5 @@
-// const htmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
+
 module.exports = {
   mode:'production', // production || development
   entry: {
@@ -11,6 +11,9 @@ module.exports = {
     libraryTarget: 'umd'
     
   },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  }, 
   module:{
     rules:[
       {
@@ -20,12 +23,9 @@ module.exports = {
     ]
   },
   plugins: [
-    // new htmlWebpackPlugin({
-    //   title: 'react-vant',
-    //   template: 'index.html'
-    // })
   ],
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+  externals: {
+    react: 'react',
+    'react-dom':'ReactDOM'
   }
 }
