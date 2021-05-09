@@ -4,7 +4,7 @@ import Vant from '../src'
 
 ReactDOM.render(
 	<div>
-		<Vant.Button></Vant.Button>
+		<Vant.Icon name="location" onclick={()=>{console.log('eee')}}/>
 	</div>,
 	document.querySelector('#root')
 );

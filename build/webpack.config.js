@@ -20,6 +20,14 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
+      },
+      {
+        test: /\.s[a|c]ss$/,
+        use:['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.less$/,
+        use:['style-loader', 'css-loader','less-loader']
       }
     ]
   },
@@ -48,7 +56,7 @@ module.exports = {
     // })
   ],
   externals: {
-    react: 'react',
-    'react-dom':'ReactDOM'
+    // react: 'react',
+    // 'react-dom':'ReactDOM'
   }
 }
