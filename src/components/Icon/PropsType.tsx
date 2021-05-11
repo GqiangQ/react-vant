@@ -1,10 +1,12 @@
-export default interface ButtonPropsType {
+import * as React from 'react'
+
+export default interface IconPropsType {
     name?: string;
     dot?: boolean;
     badge?: string | number;
-    color?: boolean;
     size?: string | number;
-    classPrefix?: string;
-    tag?: string;
-    onclick?: ()=>void
+    className?: string;
+    color?: string;
+    style?: React.CSSProperties;
+    onClick?: React.MouseEventHandler<HTMLDivElement>
   }
